@@ -54,11 +54,16 @@ for item in elems_td:
   values.append(value)
 print(values)
 
+# pandas
 import pandas as pd
 
 df = pd.DataFrame()
 df['項目'] = keys
 df['値'] = values
+df.to_csv('講師情報.csv', index=False)
+
+
+
 
 
 
